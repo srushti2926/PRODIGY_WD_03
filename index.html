@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="https://imgs.search.brave.com/3Ed3-uhoEabUzFPy_EE9KA_qFESKKFfsC6TVq9ifwDs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hYnN0cmFjdC10/aWMtdGFjLXRvZS1n/YW1lLWNvbXBldGl0/aW9uLXhvLXdpbi1j/aGFsbGVjZ2UtY29u/Y2VwdC1ibGFjay1i/b2FyZF80MzQyOS00/NjkuanBnP3NpemU9/NjI2JmV4dD1qcGc">
+</head>
+<body>
+  <h2><b><i>Tic Tac Toe</i></b></h2>
+  <div class="container">
+    <div id="welcome-msg" class="welcome-msg">WELCOME!!!</div>
+    <div id="restart-msg" class="restart-msg"></div>
+    <div id="board" class="board">
+      <div class="cell" onclick="makeMove(0)"></div>
+      <div class="cell" onclick="makeMove(1)"></div>
+      <div class="cell" onclick="makeMove(2)"></div>
+      <div class="cell" onclick="makeMove(3)"></div>
+      <div class="cell" onclick="makeMove(4)"></div>
+      <div class="cell" onclick="makeMove(5)"></div>
+      <div class="cell" onclick="makeMove(6)"></div>
+      <div class="cell" onclick="makeMove(7)"></div>
+      <div class="cell" onclick="makeMove(8)"></div>
+    </div>
+    <div id="status" class="status">It's player X's turn!</div>
+    <h1>
+        <div id="stat" class="stat">Choose Game mode!</div>
+    </h1>
+    <div class="mode-buttons">
+      <button onclick="switchMode('player')">Player vs Player</button>
+      <button onclick="switchMode('computer')">Player vs Computer</button>
+    </div>
+    
+    <button onclick="restartGame('restart')">Restart Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
